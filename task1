@@ -1,1 +1,293 @@
+# ==========================================================
+# SMART STUDENT ASSISTANT CHATBOT
+# Your Personal Academic and Career Companion
+# Rule-Based Chatbot using If-Else Statements
+# ==========================================================
 
+import datetime
+
+print("=" * 70)
+print("🎓        SMART STUDENT ASSISTANT CHATBOT")
+print("=" * 70)
+print("📚 Your Personal Academic and Career Companion")
+print("\nHello Student! 👋")
+print("I am SmartBot, your virtual student assistant.")
+print("I can help you with studies, programming, career guidance,")
+print("motivation, and general student-related queries.")
+print("\n💡 Type 'help' to see all available commands.")
+print("🚪 Type 'bye' to exit.\n")
+
+while True:
+
+    user = input("You: ").lower().strip()
+
+    # ======================
+    # GREETINGS
+    # ======================
+
+    if user in ["hi", "hello", "hey", "good morning", "good evening"]:
+        print("Bot: Hello! 😊 Welcome back. How can I assist you today?")
+
+    elif "your name" in user:
+        print("Bot: My name is SmartBot, your Smart Student Assistant. 🤖")
+
+    elif "how are you" in user:
+        print("Bot: I'm doing great and ready to help you learn something new today! 😊")
+
+    # ======================
+    # HELP MENU
+    # ======================
+
+    elif user == "help":
+
+        print("\n" + "=" * 70)
+        print("📚 AVAILABLE COMMANDS")
+        print("=" * 70)
+
+        print("\n🎓 STUDY SUPPORT")
+        print("- exam tips")
+        print("- study plan")
+        print("- attendance")
+        print("- assignment")
+        print("- notes")
+        print("- revision")
+        print("- semester")
+
+        print("\n💻 PROGRAMMING HELP")
+        print("- python")
+        print("- c language")
+        print("- c++")
+        print("- java")
+        print("- html")
+        print("- css")
+        print("- javascript")
+        print("- dsa")
+        print("- database")
+
+        print("\n💼 CAREER GUIDANCE")
+        print("- career")
+        print("- internship")
+        print("- resume")
+        print("- linkedin")
+        print("- interview")
+        print("- placement")
+        print("- skills")
+
+        print("\n😊 MOTIVATION CORNER")
+        print("- motivation")
+        print("- stressed")
+        print("- tired")
+        print("- confidence")
+        print("- success")
+
+        print("\n🎉 FUN ZONE")
+        print("- joke")
+        print("- fact")
+        print("- quote")
+
+        print("\n🧮 UTILITIES")
+        print("- date")
+        print("- time")
+        print("- cgpa")
+
+        print("\n🚪 EXIT")
+        print("- bye")
+        print("=" * 70)
+
+    # ======================
+    # DATE & TIME
+    # ======================
+
+    elif "date" in user:
+        today = datetime.datetime.now().strftime("%d-%m-%Y")
+        print(f"Bot: 📅 Today's date is {today}")
+
+    elif "time" in user:
+        current_time = datetime.datetime.now().strftime("%I:%M %p")
+        print(f"Bot: ⏰ Current time is {current_time}")
+
+    # ======================
+    # STUDY SUPPORT
+    # ======================
+
+    elif "exam tips" in user:
+        print("Bot: 📖 Study important topics first, solve previous year papers,")
+        print("     practice regularly, and revise before exams.")
+
+    elif "study plan" in user:
+        print("Bot: ⏳ Follow the 45-10 Rule:")
+        print("     Study for 45 minutes and take a 10-minute break.")
+        print("     Consistency is more important than long study hours.")
+
+    elif "attendance" in user:
+        print("Bot: 🎯 Maintain at least 75% attendance to stay eligible")
+        print("     for examinations and academic activities.")
+
+    elif "assignment" in user:
+        print("Bot: 📝 Complete assignments before deadlines.")
+        print("     Focus on understanding concepts instead of copying answers.")
+
+    elif "notes" in user:
+        print("Bot: 📚 Organized notes improve revision speed and retention.")
+        print("     Use headings, bullet points, and highlights.")
+
+    elif "revision" in user:
+        print("Bot: 🔄 Revise a topic within 24 hours of learning it.")
+        print("     This greatly improves memory retention.")
+
+    elif "semester" in user:
+        print("Bot: 🎓 Consistent study throughout the semester reduces")
+        print("     exam pressure and improves academic performance.")
+
+    # ======================
+    # PROGRAMMING HELP
+    # ======================
+
+    elif "python" in user:
+        print("Bot: 🐍 Python is a beginner-friendly language used in")
+        print("     AI, Data Science, Automation, and Web Development.")
+
+    elif "c language" in user or user == "c":
+        print("Bot: 💻 C is a powerful procedural programming language")
+        print("     known for speed and efficiency.")
+
+    elif "c++" in user:
+        print("Bot: ⚡ C++ supports Object-Oriented Programming and")
+        print("     is widely used in software development.")
+
+    elif "java" in user:
+        print("Bot: ☕ Java is platform-independent and widely used")
+        print("     for enterprise and Android applications.")
+
+    elif "html" in user:
+        print("Bot: 🌐 HTML creates the structure of web pages.")
+
+    elif "css" in user:
+        print("Bot: 🎨 CSS is used to style and design web pages.")
+
+    elif "javascript" in user:
+        print("Bot: 🚀 JavaScript makes websites interactive and dynamic.")
+
+    elif "dsa" in user:
+        print("Bot: 📊 Data Structures and Algorithms are essential")
+        print("     for coding interviews and placements.")
+
+    elif "database" in user:
+        print("Bot: 🗄️ Databases store and manage information efficiently.")
+        print("     Examples: MySQL, Oracle, MongoDB.")
+
+    # ======================
+    # CAREER GUIDANCE
+    # ======================
+
+    elif "career" in user:
+        print("Bot: 💼 Build a strong career by developing technical skills,")
+        print("     communication skills, and practical project experience.")
+
+    elif "internship" in user:
+        print("Bot: 🏢 Internships provide industry exposure and")
+        print("     strengthen your resume.")
+
+    elif "resume" in user:
+        print("Bot: 📄 A good resume should include skills, projects,")
+        print("     internships, certifications, and achievements.")
+
+    elif "linkedin" in user:
+        print("Bot: 🔗 Keep your LinkedIn profile updated and professional.")
+        print("     Connect with industry professionals regularly.")
+
+    elif "interview" in user:
+        print("Bot: 🎤 Prepare technical concepts, projects, aptitude,")
+        print("     and communication skills for interviews.")
+
+    elif "placement" in user:
+        print("Bot: 🎯 Focus on DSA, aptitude, projects, and soft skills")
+        print("     to improve placement opportunities.")
+
+    elif "skills" in user:
+        print("Bot: ⭐ Valuable skills include:")
+        print("     Programming")
+        print("     Problem Solving")
+        print("     Teamwork")
+        print("     Communication")
+        print("     Project Development")
+
+    # ======================
+    # MOTIVATION CORNER
+    # ======================
+
+    elif "motivation" in user:
+        print("Bot: 🚀 Success is the sum of small efforts repeated every day.")
+        print("     Keep moving forward!")
+
+    elif "stressed" in user:
+        print("Bot: 😊 Take a short break, organize your tasks,")
+        print("     and focus on one thing at a time.")
+
+    elif "tired" in user:
+        print("Bot: 🌿 Rest is productive too.")
+        print("     Stay hydrated and recharge yourself.")
+
+    elif "confidence" in user:
+        print("Bot: 💪 Confidence comes from preparation and practice.")
+        print("     Trust your abilities.")
+
+    elif "success" in user:
+        print("Bot: 🏆 Success is achieved through discipline,")
+        print("     consistency, and continuous learning.")
+
+    # ======================
+    # FUN ZONE
+    # ======================
+
+    elif "joke" in user:
+        print("Bot: 😂 Why do programmers prefer dark mode?")
+        print("     Because light attracts bugs!")
+
+    elif "fact" in user:
+        print("Bot: 🤓 Fun Fact:")
+        print("     Ada Lovelace is considered the world's first programmer.")
+
+    elif "quote" in user:
+        print('Bot: 💡 "The future depends on what you do today."')
+        print("     - Mahatma Gandhi")
+
+    # ======================
+    # CGPA
+    # ======================
+
+    elif "cgpa" in user:
+        print("Bot: 📈 CGPA stands for Cumulative Grade Point Average.")
+        print("     It represents your overall academic performance.")
+
+    # ======================
+    # THANK YOU
+    # ======================
+
+    elif "thank" in user:
+        print("Bot: 😊 You're welcome! Happy to help.")
+
+    # ======================
+    # EXIT
+    # ======================
+
+    elif user in ["bye", "exit", "quit"]:
+        print("\nBot: 🎓 Thank you for using Smart Student Assistant.")
+        print("Bot: Keep learning, keep growing, and never stop improving!")
+        print("Bot: Have a wonderful day ahead. 👋")
+        break
+
+    # ======================
+    # EMPTY INPUT
+    # ======================
+
+    elif user == "":
+        print("Bot: Please enter a question so I can assist you.")
+
+    # ======================
+    # DEFAULT RESPONSE
+    # ======================
+
+    else:
+        print("Bot: 🤔 Sorry, I don't have information about that yet.")
+        print("Bot: Type 'help' to see all available commands.")
